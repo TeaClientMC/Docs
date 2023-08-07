@@ -3,6 +3,6 @@
 * [Installation](README.md)
 * [Getting Started](<Getting Started/README.md>)
   * [Intro](<Getting Started/Installation.md>)
-  * [Intro](<Getting Started/Intro.md>)
+  * [Installation](<Getting Started/installation.md>)
 * [API](API/README.md)
   * [Intro](API/IntroAPI.md)
