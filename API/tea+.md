@@ -2,7 +2,7 @@
 description: How to make it check For Tea +
 ---
 
-# Tea + Verification
+# ✅ Tea + Verification&#x20;
 
 ## Example to check if player has Tea+ (Premium)
 

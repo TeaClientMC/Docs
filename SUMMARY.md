@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Installation](README.md)
-* [Getting Started](<Getting Started/README.md>)
-  * [Intro](<Getting Started/Installation.md>)
-  * [Installation](<Getting Started/installation.md>)
+* [📕 Getting Started](getting-started/README.md)
+  * [📖 Intro](getting-started/intro.md)
+  * [⬇ Installation](getting-started/install.md)
 * [API](API/README.md)
-  * [Intro](API/IntroAPI.md)
-  * [Tea + Verification](API/tea-+-verification.md)
+  * [📗 Intro](API/intro.md)
+  * [✅ Tea + Verification ](API/tea+.md)
