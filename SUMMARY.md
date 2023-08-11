@@ -6,3 +6,4 @@
   * [Installation](<Getting Started/installation.md>)
 * [API](API/README.md)
   * [Intro](API/IntroAPI.md)
+  * [Tea + Verification](API/tea-+-verification.md)
