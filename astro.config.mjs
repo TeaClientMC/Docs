@@ -4,6 +4,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
+    	site: 'https://teaclient.net/docs/',
       title: "TeaClient Documentations",
       lastUpdated: true,
       customCss: ["./src/styles/style.css"],
