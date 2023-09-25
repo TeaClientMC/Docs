@@ -2,9 +2,9 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
 export default defineConfig({
+    site: 'https://teaclient.net/docs/',
   integrations: [
     starlight({
-    	site: 'https://teaclient.net/docs/',
       title: "TeaClient Documentations",
       lastUpdated: true,
       customCss: ["./src/styles/style.css"],
