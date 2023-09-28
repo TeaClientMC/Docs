@@ -7,6 +7,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "TeaClient Documentations",
+      logo : {
+        src: '/src/assets/teaclient.png'
+      },
       lastUpdated: true,
       customCss: ["./src/styles/style.css"],
       editLink: {
