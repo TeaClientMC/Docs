@@ -8,7 +8,7 @@ export default defineConfig({
     starlight({
       title: "TeaClient Documentations",
       logo : {
-        src: '/src/assets/teaclient.png'
+        src: '/src/assets/Tea_client_circle_background.png'
       },
       lastUpdated: true,
       customCss: ["./src/styles/style.css"],
