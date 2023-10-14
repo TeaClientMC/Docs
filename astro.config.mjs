@@ -29,7 +29,7 @@ export default defineConfig({
               link: "/getting-started/install/",
               badge: { text: "Experimental", variant: "caution" },
             },
-            { label: "Contribute", link: "/contributing/contribute/", badge: "New" }
+            { label: "Contributing", link: "/contributing/contribute/", badge: "New" }
           ],
         },
         {
