@@ -7,8 +7,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "TeaClient Documentations",
+      components: {
+        
+        SocialIcons: './src/content/components/social.astro',
+      },
+      favicon: "/favicon.png",
       logo : {
-        src: '/src/assets/Tea_client_circle_background.png'
+        src: './src/assets/Night_sky_TeaClient.webp'
       },
       lastUpdated: true,
       customCss: ["./src/styles/style.css"],
@@ -39,6 +44,12 @@ export default defineConfig({
             { label: "Tea+", link: "/api/tea/", badge: "New" },
           ],
         },
+        {
+          label: "Website",
+          items: [
+            { label: "🤖 Robots.txt", link: "/website/robots" },
+          ]
+        }
       ],
     }),
   ],
