@@ -16,10 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       # Install Dependenices
-      - run: npm install
+      - run: bun install
       # Build Docs
       - run: cd ../../
-      - run: npm run build
+      - run: bun build
       # Add to NGINX
       - run: mv dist/ docs/
       - run: cp -R docs/ /home/tea/sites/
