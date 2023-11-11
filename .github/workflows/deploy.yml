@@ -19,7 +19,7 @@ jobs:
       - run: bun install
       # Build Docs
       - run: cd ../../
-      - run: bun build
+      - run: bun run build
       # Add to NGINX
       - run: mv dist/ docs/
       - run: cp -R docs/ /home/tea/sites/
