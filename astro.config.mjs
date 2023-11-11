@@ -13,7 +13,7 @@ export default defineConfig({
       },
       favicon: "/favicon.png",
       logo : {
-        src: './src/assets/Night_sky_TeaClient.webp'
+        src: './src/assets/Tea_client.webp'
       },
       lastUpdated: true,
       customCss: ["./src/styles/style.css"],
