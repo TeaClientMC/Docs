@@ -17,10 +17,11 @@ jobs:
       - uses: actions/checkout@v3
       # Install Dependenices
       - run: bun install
+      # Install Sharp(Required)
+      - run: npm install sharp
+      - run: rm package-lock.json
       # Build Docs
       - run: cd ../../
-      - run: npm install sharp.
-      - run: rm package-lock.json
       - run: bun run build
       # Add to NGINX
       - run: mv dist/ docs/
