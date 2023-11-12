@@ -1,56 +1,54 @@
 ---
 title: Contributing Guide
 ---
-import YoutubeVideo from "/src/content/components/youtubeVideo.astro"
 
+import YoutubeEmbed from "/src/content/components/YoutubeEmbed.astro"
 
+<YoutubeEmbed URL="https://www.youtube.com/embed/yzeVMecydCE"/>
+<p align="center"><i>Credits: FreeCodeCamp</i></p>
 
-#### You must follow our [Code-of-Coduct](https://teaclient.net/policies/code-of-conduct)
+#### Please adhere to our [Code-of-Conduct](https://teaclient.net/policies/code-of-conduct)
 
-##### Failing to do so will result in a CLOSED Pull Request.
+##### Not adhering to the rules will lead to your Pull Request (PR) being closed.
 
+# Repository Forking Steps
 
+**Step 1:** Click the fork button at the top of this page to create a fork of this repository.
+**Step 2:** This action creates a duplicate of the repository in your account.
 
-If you never made a first contribution check out [here](https://github.com/firstcontributions/first-contributions) how to.
+Provide a name and description for the forked repository.
+Optionally, if you don't want to just copy the `main` branch, you can untick "Copy the `main` branch only."
 
-# Forking This Repostory
+Finally, click "Create Fork."
 
-_Fork this repository by_ **clicking on the fork button** _on the top of this page._
-_This will_ **create a copy of this repository in your account.**
+# Coding and Formatting Standards
 
-**Name the repository.**
-**Add a description of the repository.**
-_Optional: Untick Copy the `main` branch only_
+##### For code formatting, we recommend using Prettier.
 
-**Click Create Fork**
+Check out these recommended Prettier plugins:
+- [Prettier-java](https://github.com/jhipster/prettier-java)
+- [Prettier-plugin-astro](https://github.com/withastro/prettier-plugin-astro)
+We will continue to update plugins' list over time.
 
-# Formating
+# Commits
 
-##### For Formating please use Prettier.
-
-Prettier Plugins will will use:
-[Prettier-java](https://github.com/jhipster/prettier-java),
-[Prettier-plugin-astro](https://github.com/withastro/prettier-plugin-astro),
-**More Adding/Changes to the list in future**
-
-# Commiting
-When you commit you must Use the [Covential Commits Format](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+Commit messages should follow the [Conventional Commits Format](https://www.conventionalcommits.org/en/v1.0.0-beta.2/):
 ```
 Type: [Optional: Scope]: Description
 
 Body/Description
 
-Optional: Description
+Optional: Additional Details
 ```
-##### Types:
-> Fixes: For fixing code that is not working properly.
- 
-> Bugs: For bugs that are making the application fail/glitch.
 
-> Breaking Changes/Major Changes: Added a major Changes
+##### Commit types include:
 
-> Patches: Like a patch to patch bugs + fixes.
+> **Fixes:** Applying a patch to non-functional code.
 
+> **Bugs:** Addressing bugs causing the app to crash or behave unexpectedly.
 
-**Note: That Some commits require you to use the [Semantic Versioning.](https://www.geeksforgeeks.org/introduction-semantic-versioning/)**
+> **Breaking Changes/Major Changes:** Implementing significant changes to the code.
 
+> **Patches:** Applying patches to address bugs and/or fixes.
+
+**Note: Some commits might necessitate the use of [Semantic Versioning](https://www.geeksforgeeks.org/introduction-semantic-versioning/).**

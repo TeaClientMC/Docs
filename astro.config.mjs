@@ -48,6 +48,7 @@ export default defineConfig({
           label: "Website",
           items: [
             { label: "🤖 Robots.txt", link: "/website/robots" },
+            { label: "🗺️ Sitemap", link: "/website/sitemap" },
           ]
         }
       ],

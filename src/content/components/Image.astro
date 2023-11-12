@@ -1,0 +1,26 @@
+---
+// Component.js
+interface Props {
+  Src: string;
+}
+
+let { Src } = Astro.props as Props;
+---
+
+<div class="box" style={`--Src: url(${Src})`}></div>
+
+<style>
+.box {
+    box-shadow: 0 0 40px rgb(0, 0, 0);
+    position: relative;
+    background: var(--Src) center center / cover;
+    flex-basis: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: 9;
+    animation: reveal-hero-image 3s ease-out backwards;
+
+    transform: perspective(800px) rotateY(-15deg) translateY(10px) rotateX(10deg) scale(1);
+    transition: transform 0.6s ease;
+}
+</style>
