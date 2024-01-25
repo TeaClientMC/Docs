@@ -5,6 +5,13 @@
   }
 }
 
+
+
+
+
+
+
+
 @supports (-moz-appearance: none) {
   .header {
     backdrop-filter: blur(6px);
