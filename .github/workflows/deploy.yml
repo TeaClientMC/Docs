@@ -11,18 +11,24 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
-
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      # Install Dependenices
-      - run: bun install
-      # Install Sharp(Required)
-      - run: npm install sharp
-      - run: rm package-lock.json
-      # Build Docs
-      - run: cd ../../
-      - run: bun run build
-      # Add to NGINX
-      - run: mv dist/ docs/
-      - run: cp -R docs/ /home/tea/sites/
+      - uses: actions/checkout@v4
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
+        with:
+          package-manager:  bun@latest
+          
+  deploy: 
+    needs: build
+    runs-on: ubuntu-latest
+    permissions: 
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps: 
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
