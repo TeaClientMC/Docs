@@ -4,6 +4,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   site: "https://teaclient.net/docs/",
   base: "/docs/",
+  output: 'static',
   integrations: [
     starlight({
       title: "TeaClient Documentations",
