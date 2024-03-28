@@ -12,27 +12,7 @@
 
 
 
-@supports (-moz-appearance: none) {
-  .header {
-    backdrop-filter: blur(6px);
-  }
-}
 
-#starlight__sidebar {
-  backdrop-filter: blur(6px);
-}
-
-.header span:hover {
-  color: #6e2bec;
-}
-
-.right-sidebar {
-  border-inline-start: none;
-}
-
-.content-panel:where(.astro-7nkwcw3z) + .content-panel:where(.astro-7nkwcw3z) {
-  border: none;
-}
 
 body {
   background-image: url("/src/assets/background_dark.webp");

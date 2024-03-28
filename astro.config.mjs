@@ -6,9 +6,9 @@ export default defineConfig({
   output: 'static',
   integrations: [
     starlight({
-      title: "TeaClient Documentations",
+      title: "TeaClient Docs",
       components: {
-        SocialIcons: "./src/content/components/social.astro",
+        SocialIcons: "./src/components/social.astro",
       },
       favicon: "/favicon.png",
       logo: {
@@ -31,25 +31,19 @@ export default defineConfig({
             {
               label: "Installation",
               link: "/guides/install/",
-              badge: { text: "Experimental", variant: "caution" },
+              badge: { text: "Comming Soon!", variant: "caution" },
             },
-            { label: "Contributing", link: "/contribute/", badge: "New" },
+            { label: "API Errors", link: "/guides/apierrors", badge: { text: "New", variant: "tip"}},
           ],
         },
         {
-          label: "API",
-          items: [
-            { label: "Intro", link: "/api/intro/" },
-            { label: "Tea+", link: "/api/tea/", badge: { text: "Experimental", variant: "caution" } },
-          ],
+          label: "API Endpoints",
+          autogenerate: {directory: 'api'}
         },
         {
-          label: "Website",
-          items: [
-            { label: "🤖 Robots.txt", link: "/website/robots" },
-            { label: "🗺️ Sitemap", link: "/website/sitemap" },
-          ],
-        },
+          label: "Notices",
+          autogenerate: {directory: "notices"}
+        }
       ],
     }),
   ],
