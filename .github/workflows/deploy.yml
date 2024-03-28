@@ -5,7 +5,8 @@ name: Deploy Docs
 
 on:
   push:
-    branches: [ "starlight" ]
+    branches: 
+      - main
 
   workflow_dispatch:
 
