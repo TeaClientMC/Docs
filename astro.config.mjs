@@ -43,6 +43,15 @@ export default defineConfig({
         {
           label: "Notices",
           autogenerate: {directory: "notices"}
+        },
+        {
+          label: "Resources",
+          items: [
+            { label: "API URL", link: "https://api.teaclient.net" },
+            { label: "Roadmap", link: "https://teaclient.net/roadmap" },
+            { label: "GitHub", link: "https://teaclient.net/github" },
+            { label: "Discord", link: "https://teaclient.net/discord" },
+          ]
         }
       ],
     }),
