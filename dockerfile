@@ -1,7 +1,8 @@
 FROM oven/bun
 
 
-COPY . .
+COPY . /app
+WORKDIR /app
 
 
 RUN bun install
