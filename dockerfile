@@ -1,15 +1,9 @@
-FROM oven/bun
-
-
-COPY . /app
+FROM node:lts AS build
 WORKDIR /app
+COPY . .
+RUN corepack enable pnpm 
+RUN pnpm install
+RUN pnpm run build
 
-
-RUN bun install
-RUN bun astro telemetry disable
-
-RUN bun run build
-
-EXPOSE 4321
-
-CMD [ "bun run preview" ]
+EXPOSE 8080
+CMD [ "pnpm", "preview" ]
