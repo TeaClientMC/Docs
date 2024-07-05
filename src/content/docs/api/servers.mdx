@@ -1,0 +1,22 @@
+---
+title: Servers API
+---
+import Http from "../../../components/Http.astro";
+
+<Http method="GET" url="https://api.teaclient.net/servers" />
+
+### Response
+
+```json
+[
+  {
+    "name": "example",
+    "server_ip": "example.com",
+    "description": "A Minecraft Server for the Example community.",
+    "icon": "https://assets.teaclient.net/images/example.png",
+    "banner": "https://assets.teaclient.net/images/example.png",
+    "partnered": false
+  },
+  ...
+]
+```

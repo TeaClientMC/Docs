@@ -1,0 +1,22 @@
+---
+title: Blocked Mods API
+---
+
+import Http from "../../../../components/Http.astro";
+
+<Http method="GET" url="https://api.teaclient.net/mods/blocked" />
+
+### Response
+
+```json
+{
+    "mods": null,
+    "blocked_mods": [
+        {
+            "name": "exampleClient",
+            "reason": "Minecraft Client"
+        },
+        ...
+    ]
+}
+```
