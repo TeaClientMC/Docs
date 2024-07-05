@@ -1,48 +1,16 @@
-@supports not (-moz-appearance: none) {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
   .header {
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px) saturate(10%);
   }
-}
 
-
-
-
-
-
-
-
-
+  .header > div {
+    @apply bg-[#00000015] bg-no-repeat;
+  }
 
 body {
-  background-image: url("/src/assets/background_dark.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Dark mode colors. */
-:root {
-  --sl-color-accent-low: #000000;
-  --sl-color-accent: rgb(128, 0, 220);
-  --sl-color-accent-high: #ffffff;
-  --sl-color-white: #ffffff;
-  --sl-color-gray-1: #ffffff;
-  --sl-color-gray-2: rgb(255, 255, 255);
-  --sl-color-gray-3: rgb(151, 49, 195);
-  --sl-colorx-gray-4: #ffffff;
-  --sl-color-gray-5: rgba(0, 0, 0, 0.412);
-  --sl-color-gray-6: rgba(0, 0, 0, 0.392);
-}
-/* Light mode colors. */
-:root[data-theme="light"] {
-  --sl-color-accent-low: #5f5f5f;
-  --sl-color-accent: rgb(0, 0, 0);
-  --sl-color-accent-high: rgb(128, 0, 220);
-  --sl-color-white: rgb(128, 0, 220);
-  --sl-color-gray-1: rgb(128, 0, 220);
-  --sl-color-gray-2: rgb(0, 0, 0);
-  --sl-color-gray-3: rgb(151, 49, 195);
-  --sl-colorx-gray-4: rgb(128, 0, 220);
-  --sl-color-gray-5: rgb(128, 0, 220);
-  --sl-color-gray-6: #00000000;
+  @apply bg-[url("/src/assets/background_dark.webp")] bg-no-repeat bg-cover;
 }
