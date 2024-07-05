@@ -24,4 +24,10 @@ pnpm-debug.log*
 
 # Unnesserly files
 
-packag-json.lock
+package-json.lock
+
+
+# Nix 
+.devenv
+.direnv
+yarn.lock
