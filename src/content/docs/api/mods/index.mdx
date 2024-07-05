@@ -1,0 +1,32 @@
+---
+title: Mods API
+---
+
+import Http from "../../../../components/Http.astro";
+
+<Http method="GET" url="https://api.teaclient.net/mods" />
+
+### Response
+
+```json
+{
+    "mods": [
+        {
+            "name": "Example",
+            "author": "Example",
+            "git": "https://github.com/Example/ExampleMod",
+            "licence": "MIT",
+            "homepage": "https://example.com",
+            "mc_version_reccomended": ["Example MC Version"],
+            "description": "A Minecraft Mod for the Example community."
+        },
+        ...
+    ],
+    "blocked_mods": [
+        {
+            "name": "ExampleClient",
+            "reason": "Minecraft Client"
+        },
+    ]
+}
+```
