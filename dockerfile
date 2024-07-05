@@ -6,6 +6,7 @@ WORKDIR /app
 
 
 RUN bun install
+RUN bun astro telemetry disable
 
 RUN bun run build
 
