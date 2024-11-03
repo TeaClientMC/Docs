@@ -24,7 +24,12 @@ export default defineConfig({
       github: "https://github.com/TeaClientMC/",
       discord: "https://discord.gg/aKXRP4WC7P"
     },
-    sidebar: [{
+    sidebar: [
+      {
+        label: "Deprecation Notice",
+        link: "/deprecation"
+      },
+      {
       label: "Guides",
       items: [{
         label: "Intro",
