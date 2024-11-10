@@ -1,3 +1,6 @@
+> [!WARNING]
+> This is now deprecated please use the [website repo](https://github.com/teaclientmc/website) to make changes to documentation, [read more here](https://docs.teaclient.net/deprecation/).
+
 # TeaClient Documentation
 
 **Opensourced Documentation for a client**
