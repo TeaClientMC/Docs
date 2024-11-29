@@ -6,6 +6,12 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://docs.teaclient.net",
   output: 'static',
+  redirects: {
+    '/': {
+      status: 301,
+      destination: 'https://teaclient.net/wiki',
+    },
+  },
   integrations: [starlight({
     title: "TeaClient Docs",
     components: {
@@ -17,63 +23,9 @@ export default defineConfig({
     },
     lastUpdated: true,
     customCss: ["./src/styles/style.css"],
-    editLink: {
-      baseUrl: "https://github.com/TeaClientMC/Docs/edit/starlight/"
-    },
     social: {
       github: "https://github.com/TeaClientMC/",
       discord: "https://discord.gg/aKXRP4WC7P"
     },
-    sidebar: [
-      {
-        label: "Deprecation Notice",
-        link: "/deprecation"
-      },
-      {
-      label: "Guides",
-      items: [{
-        label: "Intro",
-        link: "/guides/intro/"
-      }, {
-        label: "Installation",
-        link: "/guides/install/",
-        badge: {
-          text: "Comming Soon!",
-          variant: "caution"
-        }
-      }, {
-        label: "API Errors",
-        link: "/guides/apierrors",
-        badge: {
-          text: "New",
-          variant: "tip"
-        }
-      }]
-    }, {
-      label: "API Endpoints",
-      autogenerate: {
-        directory: 'api'
-      }
-    }, {
-      label: "Notices",
-      autogenerate: {
-        directory: "notices"
-      }
-    }, {
-      label: "Resources",
-      items: [{
-        label: "API URL",
-        link: "https://api.teaclient.net"
-      }, {
-        label: "Roadmap",
-        link: "https://teaclient.net/roadmap"
-      }, {
-        label: "GitHub",
-        link: "https://teaclient.net/github"
-      }, {
-        label: "Discord",
-        link: "https://teaclient.net/discord"
-      }]
-    }]
   }), tailwind()]
 });
